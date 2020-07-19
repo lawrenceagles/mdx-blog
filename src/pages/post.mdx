@@ -1,0 +1,66 @@
+
+
+
+import {Link} from "gatsby"
+import {FiInfo} from "react-icons/fi"
+import {Counter, LikeButton} from "../components/Complete"
+
+
+<section className="mdx-page">
+
+
+## my first mdx file
+
+***I'm baby cred mustache helvetica, chambray normcore semiotics kickstarter.***
+Cardigan man braid thundercats succulents austin. Hexagon sriracha helvetica viral man braid synth DIY woke. Cold-pressed woke taiyaki heirloom.
+
+<div className="code">
+
+    ```js
+    const hello = "Lawrence"
+    const hello = "Lawrence"
+    ```
+
+</div>
+
+<div className="nice-text">
+
+<h3>nice text</h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+I'm baby cred mustache helvetica, chambray normcore semiotics kickstarter. Cardigan man braid thundercats succulents austin. Hexagon sriracha helvetica viral man braid synth DIY woke. Cold-pressed woke taiyaki heirloom. Chambray mustache semiotics, drinking vinegar prism blog fanny pack paleo kinfolk church-key kogi YOLO fixie salvia. Gastropub humblebrag portland succulents. Chartreuse prism health goth put a bird on it.
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter />
+
+```jsx
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+</section>
