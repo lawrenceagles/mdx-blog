@@ -15,7 +15,7 @@ const Post = ({ frontmatter, excerpt }) => {
 				<h3>{title}</h3>
 				<div className='underline' />
 				<p>{excerpt}</p>
-				<Link to={`posts/${slug}`} className='link'>
+				<Link to={`/posts/${slug}`} className='link'>
 					Continue Reading <IoMdArrowRoundForward />
 				</Link>
 				<footer>
