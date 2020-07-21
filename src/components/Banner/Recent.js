@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
 import Image from "gatsby-image";
 import Title from "./Title";
-// ...GatsbyImageSharpFluid
 
 const Recent = () => {
 	const data = useStaticQuery(query);
