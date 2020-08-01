@@ -1,5 +1,12 @@
 module.exports = {
-	plugins : [
+	siteMetadata : {
+		title       : "CodeWithEagles",
+		description : "Best Place To Learn Coding",
+		author      : "Lawrence Eagles",
+		keywords    : "Javascript, programming",
+		siteUrl     : "https://cwd.com",
+	},
+	plugins      : [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-styled-components`,
 		`gatsby-remark-images`,
